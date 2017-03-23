@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #808080;  
+}
+
+header, footer, div, section, form {
+    background-color: #FFFFFF;
+    min-width: 800px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+div, section, form {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+section div, section section {
+    width: 100%; 
+    padding: 3px;    
+}
+
+aside {
+    background-color: #d3d3d3;
+    width: 30%;
+    min-width: 200px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    float: right;   
+}
+
+aside div {
+    background-color: #d3d3d3;
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    min-width: 200px;
+}
+
+address, footer div {
+    text-align: center;
+    padding: 0;
+}
+
+h1, nav {
+    margin-left: 250px;
+    padding: 15px;
+}
+
+img {
+    float: left;
+}
+
+nav li {
+    display: inline;
+}
+
+li a {
+    padding: 10px;
+    }
+
+a:visited {
+    color: #0000FF;
+}
+
+li a:hover {
+    color: #000000;
+}
+
+li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 5px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div ul, dl, div li {
+    margin: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+input[name="result"] {
+    width: 300px;
+    height: 30px;
+    padding-right: 5px;
+    text-align: right;
+    font-size: large;
+    }
+
+button {
+    width: 100%;
+    font-size: medium;
+    outline: none;
+    height: 28px;
+    
+    
+    
+}    
+td {
+    vertical-align: top;
+    position: relative;
+    
+}
+
+#equally {
+    position: absolute;
+    height: 58px;
+}
+
+button[type="submit"]{
+    width: 15%;
+    border: 1px solid #d3d3d3;
+}
+
+
+
+
+

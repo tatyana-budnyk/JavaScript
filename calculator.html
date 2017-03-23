@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+   <head>
+      <title>Калькулятор</title>
+      <meta charset="utf-8" /> 
+      <link rel="stylesheet" href="./style.css" />
+      <script src = "./calc.js" defer></script>
+   </head>
+   
+   <body>
+      
+      <header>
+         <img src="webLogo.png" alt="Web-технологии" height="100" />
+         <h1>Основы Web-технологий</h1>
+
+         <nav>
+            <ul>
+               <li><a href="./index.html">Главная</a></li>
+               <li class="dropdown">
+                  <a href="./web.html">Web-технологии</a>
+                     <ul class="dropdown-content">
+                        <li><a href="./html5.html">HTML5</a></li>
+                        <li><a href="./css3.html">CSS3</a></li>
+                        <li><a href="./js.html">JavaScript</a></li>
+                  </ul>
+               </li>
+               <li><a href="./calculator.html">Калькулятор</a></li>
+               <li><a href="./test.html">Тест</a></li>
+            </ul>   
+         </nav>
+
+      </header>
+
+      <form name="calculator">
+      <table>
+         <tr>
+             <td colspan="5"><input name="result" value="0" readonly="readonly"/></td>
+         </tr>
+         <tr>
+             <td><button type="button" onclick="insertNumber(7)">7</button></td>
+             <td><button type="button" onclick="insertNumber(8)">8</button></td>
+             <td><button type="button" onclick="insertNumber(9)">9</button></td>
+             <td><button type="button" onclick="calculateResult(4)">/</button></td>
+             <td><button type="button" onclick="insertNumber(10)">C</button></td>
+         </tr>
+         <tr>
+            <td><button type="button" onclick="insertNumber(4)">4</button></td>
+            <td><button type="button" onclick="insertNumber(5)">5</button></td>
+            <td><button type="button" onclick="insertNumber(6)">6</button></td>
+            <td><button type="button" onclick="calculateResult(3)">*</button></td>
+            <td><button type="button" onclick="insertNumber(11)">&plusmn;</button></td> 
+         </tr>
+         <tr> 
+            <td><button type="button" onclick="insertNumber(1)">1</button></td>
+            <td><button type="button" onclick="insertNumber(2)">2</button></td>
+            <td><button type="button" onclick="insertNumber(3)">3</button></td>
+            <td><button type="button" onclick="calculateResult(2)">-</button></td>
+            <td rowspan="2"><button type="button" id="equally" onclick="calculateResult(0)">=</button></td> 
+         </tr>
+         <tr>
+            <td colspan="2"><button type="button" onclick="insertNumber(0)">0</button></td>
+            <td><button type="button" onclick="insertNumber(12)">.</button></td>
+            <td><button type="button" onclick="calculateResult(1)">+</button></td> 
+         </tr>
+      </table>
+      </form>
+      
+      <footer>
+           <address >
+               <a href="mailto:mail@mail">Пишите: mail@mail</a>
+           </address>
+           <div>&copy; Фамилия И.О. год</div>
+       </footer>
+
+   </body>
+</html>
