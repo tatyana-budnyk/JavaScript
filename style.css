@@ -118,11 +118,9 @@ button {
     width: 100%;
     font-size: medium;
     outline: none;
-    height: 28px;
-    
-    
-    
+    height: 28px;   
 }    
+
 td {
     vertical-align: top;
     position: relative;
@@ -139,7 +137,26 @@ button[type="submit"]{
     border: 1px solid #d3d3d3;
 }
 
+.message {
+   
+   margin: auto;
+   background-color: #d3d3d3;
+   border: 1px solid gray;
+   text-align: center;   
+}
 
+.message .content {
+   background-color: #d3d3d3;
+   text-align: center;
+   height: 50px;
+   padding: 15px;
+} 
+
+.ok {
+    background-color: darkgrey;
+    width: 100px;
+    height: 30px;
+}
 
 
 
