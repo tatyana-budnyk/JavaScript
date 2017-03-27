@@ -106,6 +106,10 @@ table {
     margin: auto;
 }
 
+form {
+    position: relative;
+}
+
 input[name="result"] {
     width: 300px;
     height: 30px;
@@ -132,24 +136,25 @@ td {
     height: 58px;
 }
 
-button[type="submit"]{
-    width: 15%;
-    border: 1px solid #d3d3d3;
-}
-
 .message {
-   
-   margin: auto;
    background-color: #d3d3d3;
+   width: 400px;
+   height: 200;
+   min-width: 150px;
+   margin: -100px 0 0 -200px;
    border: 1px solid gray;
    text-align: center;   
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   
 }
 
 .message .content {
+   width: 50%;
+   min-width: 150px; 
    background-color: #d3d3d3;
    text-align: center;
-   height: 50px;
-   padding: 15px;
 } 
 
 .ok {
@@ -158,5 +163,7 @@ button[type="submit"]{
     height: 30px;
 }
 
-
+#result {
+    width: 150px;  
+}
 

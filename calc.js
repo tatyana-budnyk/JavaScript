@@ -1,4 +1,5 @@
 var currentValue = document.forms.calculator.elements[0];
+var equalButton = document.getElementById("equally");
 var resultStr = 0;
 var operationFlag = false;
 var countFlag = false;
@@ -27,11 +28,18 @@ function insertNumber(x) {
 }
 
 function calculateResult(x){
-   var nullFlag = false;
-   if (x === 0) {
-      operationFlag = false;
-      if(!countFlag) {operand2 = Number(resultStr);}
-      if (resultStr === "0") {operand2 = operand1;} 
+    operationNumber = x; 
+       if (!operationFlag) { 
+          operand1 = Number(resultStr); 
+          resultStr = "0";
+          operationFlag = true;}
+}
+
+equalButton.onclick = function() {
+    var nullFlag = false;
+    operationFlag = false;
+      if(!countFlag && resultStr !== "0") {operand2 = Number(resultStr);}
+      else if (resultStr === "0") {operand2 = operand1;} 
       switch(operationNumber){
          case 1: resultStr = (operand2 * 10 + operand1 * 10) / 10; 
          break;
@@ -44,17 +52,11 @@ function calculateResult(x){
                  break;}
                  resultStr = (operand1 * 10) / (operand2 * 10);
          break;}
-      operand1 = resultStr;
-      countFlag = true;
-      if (nullFlag) {currentValue.setAttribute("value", "Деление на ноль");}
+    operand1 = resultStr;
+    countFlag = true;
+       if (nullFlag) {currentValue.setAttribute("value", "Деление на ноль");}
           else {currentValue.setAttribute("value", resultStr);}
-                }
-   else {
-        operationNumber = x; 
-        if (!operationFlag) { 
-           operand1 = Number(resultStr); 
-           resultStr = "0";
-           operationFlag = true;}
-        }
-} 
+}
+
+
 
